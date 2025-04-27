@@ -1,0 +1,20 @@
+{
+    "prompts": {
+        "clarity": {
+            "template": "Analyze the clarity of the following customer support response. Is it easy to understand? Does it avoid jargon? Is it concise yet complete? Provide a clarity rating between 0 and 1. Your response should start with 'Rating: ' followed by the numeric score, then provide your explanation.\n\nResponse: {response}"
+        },
+        "politeness": {
+            "template": "Analyze the politeness and tone in the following customer support response. Is it respectful? Does it use appropriate greetings and closings? Does it show empathy for the customer's issue? Provide a politeness rating between 0 and 1. Your response should start with 'Rating: ' followed by the numeric score, then provide your explanation.\n\nResponse: {response}"
+        },
+        "professionalism": {
+            "template": "Analyze the professionalism of the following customer support response. Does it maintain a professional tone? Is it free of slang or inappropriate language? Does it represent the company well? Provide a professionalism rating between 0 and 1. Your response should start with 'Rating: ' followed by the numeric score, then provide your explanation.\n\nResponse: {response}"
+        },
+        "resolution": {
+            "template": "Evaluate how effectively the following customer support response resolves the issue. Does it address all parts of the customer's problem? Does it provide clear next steps or solutions? Provide a resolution rating between 0 and 1. Your response should start with 'Rating: ' followed by the numeric score, then provide your explanation.\n\nResponse: {response}"
+        },
+        "feedback": {
+            "template": "Based on the following scores for a customer support response, provide specific, actionable feedback for improvement. Clarity: {clarity_score:.2f}, Politeness: {politeness_score:.2f}, Professionalism: {professionalism_score:.2f}, Resolution: {resolution_score:.2f}, Overall Effectiveness: {effectiveness_score:.2f}. Format your response with markdown. Focus on 2-3 key areas for improvement and provide examples where possible. If scores are high, highlight strengths to maintain.\n\nThe response being evaluated: {response}"
+        }
+    },
+    "sample_response": "Dear valued customer,\n\nThank you for contacting our support team about the issue with your account login.\n\nI've investigated the matter and found that your account was temporarily locked due to multiple failed login attempts. This is a security measure we have in place to protect your account from unauthorized access.\n\nI've reset your account security status, and you should now be able to log in without any issues. For security purposes, I recommend updating your password after logging in. You can do this by navigating to \"Account Settings\" > \"Security\" > \"Change Password\".\n\nIf you continue to experience login problems or have any other questions, please don't hesitate to reply to this ticket or contact us at support@example.com.\n\nBest regards,\nJohn Smith\nCustomer Support Team"
+}

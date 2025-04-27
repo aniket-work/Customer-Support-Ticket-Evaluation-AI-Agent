@@ -1,0 +1,25 @@
+app:
+  title: "Customer Support Response Evaluator"
+  description: "This tool evaluates customer support responses based on clarity, politeness, professionalism, and issue resolution."
+  icon: "📝"
+  layout: "wide"
+
+llm:
+  provider: "openai"
+  model: "gpt-4o-mini"
+  temperature: 0.0
+  timeout: 60
+
+evaluation:
+  weights:
+    clarity: 0.25
+    politeness: 0.15
+    professionalism: 0.15
+    resolution: 0.45
+  thresholds:
+    clarity: 0.4
+    politeness: 0.5
+    professionalism: 0.5
+    color:
+      good: 0.8
+      average: 0.6
